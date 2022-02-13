@@ -1,0 +1,15 @@
+run 'app' target to run MetaWeather using www.metaweather.com/api/
+run 'testapp' target to run the same feature with mocked values
+
+this project is divided in modgit ules:
+core: all modules can implement it, its where is stored contracts and usable stuff
+locationweatcher: is a feature module, this feature render the location information on the screen
+app: this is the main app, is responsible to inject the right dataSources implementations and call features module
+testapp: is a module for testing, inject mockDataSources so the information will always be from mock, usually has less libraries and build faster
+
+improvements to do:
+- first time using compose, don't know a lot about best practices
+- manual injection is not very scalable, but setup dagger2 would take more time...
+- gradle dependencies can be more organized, but would take more time...
+- same models is been used for gson and domain logic, can be improved there
+- need to research why glideImage for compose is not working

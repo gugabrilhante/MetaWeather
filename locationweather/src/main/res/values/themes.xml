@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.MetaWeather.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MetaWeather.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MetaWeather.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
